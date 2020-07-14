@@ -1,0 +1,57 @@
+body{
+    font-family: "Lucida Sans Unicode";
+    color: #505050
+}
+header{
+    background-color: dodgerBlue;
+    color: white;
+}
+header>nav{
+    display: flex;
+    justify-content: flex-end;
+    position:relative;
+}
+
+.title{
+    font-size:1.5rem;
+    font-weight: bold;
+    margin: .5rem;
+}
+#Create-User-box{
+    display:flex;
+    justify-content: center;
+} 
+
+#Create-User-box>div{
+    display:flex;
+    border: solid black 1px;
+    width:25rem;
+    height:13rem;
+}
+#Create-User-box>div>div{
+    margin: .4rem;
+}
+#Users{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+
+#Users>div{
+    border: solid black 1px;
+    padding: 1rem;
+    height: 5rem;
+    width: 18rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.short{
+    height: 5rem;
+}
+
+.User-box>div{
+    font-weight: bold;
+    text-align:center;
+}
