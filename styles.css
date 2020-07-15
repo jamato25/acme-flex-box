@@ -3,13 +3,28 @@ body{
     color: #505050
 }
 header{
+    display:flex;
+    justify-content:space-between;
     background-color: dodgerBlue;
     color: white;
+    padding: .5rem;
 }
-header>nav{
-    display: flex;
-    justify-content: flex-end;
-    position:relative;
+
+header>div{
+    font-size: 1.5rem;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+    padding:.5rem;
+}
+
+nav{
+    display:flex;
+    flex:1;
+    justify-content: space-around;
+    margin:0;
 }
 
 .title{
@@ -22,20 +37,34 @@ header>nav{
     justify-content: center;
 } 
 
-#Create-User-box>div{
+.input{
     display:flex;
+    margin: 1rem;
+}
+
+.input div{
+    flex:1;
+}
+.input-field{
+    flex:3;
+}
+
+#buttons{
+    display:flex;
+    justify-content:center;
+}
+#save{
+    background-color:dodgerBlue;
+}
+#Create-User-box>div{
     border: solid black 1px;
     width:25rem;
     height:13rem;
-}
-#Create-User-box>div>div{
-    margin: .4rem;
 }
 #Users{
     display:flex;
     flex-wrap:wrap;
 }
-
 
 
 #Users>div{
@@ -54,4 +83,18 @@ header>nav{
 .User-box>div{
     font-weight: bold;
     text-align:center;
+}
+
+
+@media (max-width:500px) {
+    header, nav, .input{
+        flex-direction:column;
+    }
+    #Create-User-box>div{
+        height:17rem;
+    }
+    #buttons{
+        flex-direction:column;
+    }
+
 }

@@ -6,9 +6,7 @@
     </head>
     <body>
         <header>
-            <div>
-                Acme Layout
-            </div>
+            <div>Acme Layout</div>
             <nav>
                 <a href="Users">Users</a>
                 <a href="Departments">Departments</a>
@@ -19,12 +17,26 @@
         <div id="Create-User-box">
             <div>
                 <div class="title">Create A User</div>
-                <div>First Name</div>
-                <input type="text" id="First Name">;
-                <div>Last Name</div>
-                <input type="text" id="Last Name">;
-                <div>Department</div>
-                <input type="text" id="Department">;
+                <span class="input">
+                    <div>First Name</div>
+                    <input type="text" class="input-field">
+                </span>
+                <span class="input">
+                    <div>Last Name</div>
+                    <input type="text" class="input-field">
+                </span>
+                <span class="input">
+                    <div>Department</div>
+                    <select type="text" class="input-field">
+                        <option value = "None">-- None --</option>
+                        <option value = "Human Resources">Human Resources</option>
+                        <option value = "Engineering">Engineering</option>
+                    </select>
+                </span>
+                <div id="buttons">
+                    <button type="button">Clear</button>
+                    <button id ="save" type="button">Save</button>
+                </div>
             </div> 
         </div>
         <div id="Users">
